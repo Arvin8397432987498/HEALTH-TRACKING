@@ -1,3 +1,5 @@
+Here’s a clean and beginner-friendly README.md file for your Daily Health Tracker project:
+
 # 🩺 Daily Health Tracker
 
 A simple Flask-based web app that lets you manually track your daily health habits like weight, sleep, water intake, and notes — all stored in a lightweight SQLite database. Built with beginners in mind.
@@ -31,7 +33,18 @@ A simple Flask-based web app that lets you manually track your daily health habi
 
 ## 📁 Project Structure
 
+health_tracker/
+├── app.py # Flask backend
+├── templates/
+│ ├── index.html # Home + entry form
+│ └── edit.html # Entry edit page
+├── static/
+│ └── style.css # Optional CSS
+└── health.db # SQLite database (auto-created)
 
+yaml
+Copy
+Edit
 
 ---
 
@@ -41,19 +54,23 @@ A simple Flask-based web app that lets you manually track your daily health habi
 ```bash
 git clone https://github.com/yourusername/health_tracker.git
 cd health_tracker
-### 1. Clone the repository
+2. (Optional) Create and activate a virtual environment
+bash
+Copy
+Edit
 python -m venv venv
 # For Windows
 venv\Scripts\activate
-
-Install dependancies:
-
+3. Install dependencies
+bash
+Copy
+Edit
 pip install flask
-
-Run the application :
-
+4. Run the application
+bash
+Copy
+Edit
 python app.py
-
 5. Open in browser
 Go to: http://127.0.0.1:5000
 
