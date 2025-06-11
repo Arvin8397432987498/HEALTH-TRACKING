@@ -41,7 +41,7 @@ A simple Flask-based web app that lets you manually track your daily health habi
 ```bash
 git clone https://github.com/yourusername/health_tracker.git
 cd health_tracker
-
+### 1. Clone the repository
 python -m venv venv
 # For Windows
 venv\Scripts\activate
