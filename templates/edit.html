@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Entry</title>
+</head>
+<body>
+    <h1>Edit Health Entry</h1>
+    <form method="POST">
+        <input type="date" name="entry_date" value="{{ entry[1] }}" required>
+        <input type="number" name="weight" value="{{ entry[2] }}" step="0.1" required>
+        <input type="number" name="sleep_hours" value="{{ entry[3] }}" step="0.1" required>
+        <input type="number" name="water_intake" value="{{ entry[4] }}" step="0.1" required>
+        <input type="text" name="notes" value="{{ entry[5] }}">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

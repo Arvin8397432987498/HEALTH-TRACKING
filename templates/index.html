@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Health Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Health Tracker</h1>
+    <form method="POST" action="/add">
+        <input type="date" name="entry_date" required>
+        <input type="number" name="weight" placeholder="Weight (kg)" step="0.1" required>
+        <input type="number" name="sleep_hours" placeholder="Sleep Hours" step="0.1" required>
+        <input type="number" name="water_intake" placeholder="Water Intake (L)" step="0.1" required>
+        <input type="text" name="notes" placeholder="Notes">
+        <button type="submit">Add Entry</button>
+    </form>
+    <hr>
+    <h2>Previous Entries</h2>
+    {% for entry in entries %}
+        <div class="entry">
+            <strong>{{ entry[1] }}</strong> - Weight: {{ entry[2] }}kg, Sleep: {{ entry[3] }}h, Water: {{ entry[4] }}L
+            <br>Notes: {{ entry[5] or "None" }}<br>
+            <a href="/edit/{{ entry[0] }}">Edit</a> | <a href="/delete/{{ entry[0] }}">Delete</a>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
