@@ -19,10 +19,7 @@ A simple Flask-based web app that lets you manually track your daily health habi
 
 ## 🖥️ Screenshots
 
-![alt text](image.png)
-![alt text](image-1.png)
 
----
 
 ## 🛠️ Tech Stack
 
